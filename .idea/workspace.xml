@@ -2,7 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46e87804-878b-4e93-94fc-8966319f2c79" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../satsangserver/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../satsangserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/satsangserver.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/satsangserver.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/FamilyIDSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/FamilyIDSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/RootMDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/RootMDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/SatsangserverApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/SatsangserverApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/Utils/CustomDateDeSerializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/Utils/CustomDateDeSerializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/Utils/CustomDateSerializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/Utils/CustomDateSerializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/AddressMDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/AddressMDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/ArghIshtMDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/ArghIshtMDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/FamilyIDSequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/FamilyIDSequence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/FamilyMDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/FamilyMDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/FamilyMasterObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/FamilyMasterObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/IshtLineMDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/IshtLineMDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/IshtMDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/IshtMDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/IshtRefVal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/IshtRefVal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/IshtSequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/IshtSequence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/IstavritySummaryObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/IstavritySummaryObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/OTPResponseBO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/OTPResponseBO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/ResultObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/ResultObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/RitvikMDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/RitvikMDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/RootMDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/RootMDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/RootSequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/RootSequence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/SAArghyaDpsitSmmaryMDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/SAArghyaDpsitSmmaryMDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/SatsangeeMDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/SatsangeeMDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/pojo/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/classes/com/appsinventive/satsangserver/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/satsanfinal.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/satsanfinal.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/satsanfinal.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/satsanfinal.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/surefire-reports/TEST-com.appsinventive.satsangserver.SatsangserverApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/surefire-reports/TEST-com.appsinventive.satsangserver.SatsangserverApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/surefire-reports/com.appsinventive.satsangserver.SatsangserverApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/surefire-reports/com.appsinventive.satsangserver.SatsangserverApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../satsangserver/target/test-classes/com/appsinventive/satsangserver/SatsangserverApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/target/test-classes/com/appsinventive/satsangserver/SatsangserverApplicationTests.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../satsangserver/out/" />
     <ignored path="$PROJECT_DIR$/../satsangserver/target/" />
@@ -13,31 +49,30 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/satsangserver$SatsangserverApplication.ic" NAME="SatsangserverApplication Coverage Results" MODIFIED="1645968475225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/controllers/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" selection-start-line="17" selection-start-column="2" selection-end-line="21" selection-end-column="7" />
+            <state relative-caret-position="187">
+              <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,13 +80,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../satsangserver/pom.xml">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/controllers/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="65" column="30" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+            <state relative-caret-position="-705">
+              <caret line="150" column="26" selection-start-line="150" selection-start-column="26" selection-end-line="150" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FamilyIDSequence.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/FamilyIDSequence.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#434#435#0" expanded="true" />
+                <element signature="e#481#482#0" expanded="true" />
+                <element signature="e#514#515#0" expanded="true" />
+                <element signature="e#383#384#0" expanded="true" />
+                <element signature="e#405#406#0" expanded="true" />
+                <element signature="e#450#451#0" expanded="true" />
+                <element signature="e#481#482#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mongodb/admin/FamilyIDSequence" pinned="false" current-in-tab="false">
+        <entry file="mongo://mongodb/admin/FamilyIDSequence">
+          <provider selected="true" editor-type-id="MongoData" />
         </entry>
       </file>
     </leaf>
@@ -72,6 +134,14 @@
       <find>2.8.5</find>
       <find>mail</find>
       <find>serializedname</find>
+      <find>mongo</find>
+      <find>ongo</find>
+      <find />
+      <find>makepassw</find>
+      <find>insert</find>
+      <find>amilyId</find>
+      <find>.intValue()</find>
+      <find>.toString()</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -82,18 +152,25 @@
       <list>
         <option value="$PROJECT_DIR$/../satsangserver/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/models/User.java" />
-        <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/Utils/CustomDateSerializer.java" />
         <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/Utils/CustomDateDeSerializer.java" />
         <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/IshtMDB.java" />
-        <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/FamilyIDSequence.java" />
         <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/IshtLineMDB.java" />
         <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/ArghIshtMDB.java" />
         <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/RitvikMDB.java" />
         <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/SatsangeeMDB.java" />
-        <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/User.java" />
-        <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/controllers/UserController.java" />
         <option value="$PROJECT_DIR$/../satsangserver/pom.xml" />
+        <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/SatsangserverApplication.java" />
+        <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/Utils/MongoConstants.java" />
+        <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/Utils/OnlineSAConstants.java" />
+        <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/Utils/MongoBaseDao.java" />
+        <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/User.java" />
+        <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/RootMDB.java" />
+        <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/repository/FamilyIdSequence.java" />
+        <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/repository/FamilyIdSequenceReposiroty.java" />
+        <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/FamilyIDSequence.java" />
+        <option value="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/controllers/UserController.java" />
       </list>
     </option>
   </component>
@@ -112,7 +189,9 @@
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -211,6 +290,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SearchEverywhereHistoryKey" value="userco&#9;FILE&#9;file://E:/satsangserver/src/main/java/com/appsinventive/satsangserver/controllers/UserController.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -222,7 +302,11 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.appsinventive.satsangserver.repository" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\satsangserver\src\main\java\com\appsinventive\satsangserver\Utils" />
       <recent name="E:\satsangserver\src\main\java\com\appsinventive\satsangserver" />
     </key>
   </component>
@@ -295,12 +379,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1645867146547</updated>
-      <workItem from="1645867147891" duration="7577000" />
+      <workItem from="1645867147891" duration="17157000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7577000" />
+    <option name="totallyTimeSpent" value="17157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -310,10 +394,10 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="right" id="Mongo Explorer" visible="true" weight="0.32995737" />
+      <window_info active="true" anchor="right" id="Mongo Explorer" visible="true" weight="0.32995737" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Database" weight="0.32995737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
@@ -326,9 +410,10 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32900432" />
       <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32900432" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32900432" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Web" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
       <window_info anchor="right" id="Theme Preview" />
@@ -345,6 +430,50 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="7" />
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>root</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>addOne</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>familyIdSequenceReposiroty.findAll().get()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>familyIdSequenceReposiroty.findAll()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>makePasswordHash(&quot;aliahmed&quot;,&quot;123&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>makePasswordHash(passwordRequest,&quot;123&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>passwordHash</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/models/User.java">
@@ -392,23 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/AddressMDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/FamilyIDSequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/FamilyMasterObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -420,13 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/IshtLineMDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-844">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -498,13 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/RootMDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2034">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/RootSequence.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -529,6 +627,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../satsangserver/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/SatsangserverApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/AddressMDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-15.0.1/lib/src.zip!/java.logging/java/util/logging/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="689" column="25" selection-start-line="689" selection-start-column="25" selection-end-line="689" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/Utils/OnlineSAConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/Utils/MongoBaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3485">
+          <caret line="213" selection-start-line="213" selection-end-line="213" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -536,37 +677,154 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/IshtLineMDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.6.2/spring-data-commons-2.6.2.jar!/org/springframework/data/repository/CrudRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/3.3.2/spring-data-mongodb-3.3.2.jar!/org/springframework/data/mongodb/repository/MongoRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/Utils/MongoConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="102">
+          <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/RootMDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
+          <folding>
+            <element signature="e#1909#1910#0" expanded="true" />
+            <element signature="e#1949#1950#0" expanded="true" />
+            <element signature="e#1984#1985#0" expanded="true" />
+            <element signature="e#2020#2021#0" expanded="true" />
+            <element signature="e#2070#2071#0" expanded="true" />
+            <element signature="e#2112#2113#0" expanded="true" />
+            <element signature="e#2148#2149#0" expanded="true" />
+            <element signature="e#2185#2186#0" expanded="true" />
+            <element signature="e#2237#2238#0" expanded="true" />
+            <element signature="e#2281#2282#0" expanded="true" />
+            <element signature="e#2318#2319#0" expanded="true" />
+            <element signature="e#2356#2357#0" expanded="true" />
+            <element signature="e#2404#2405#0" expanded="true" />
+            <element signature="e#2444#2445#0" expanded="true" />
+            <element signature="e#2479#2480#0" expanded="true" />
+            <element signature="e#2515#2516#0" expanded="true" />
+            <element signature="e#2557#2558#0" expanded="true" />
+            <element signature="e#2591#2592#0" expanded="true" />
+            <element signature="e#2623#2624#0" expanded="true" />
+            <element signature="e#2656#2657#0" expanded="true" />
+            <element signature="e#2702#2703#0" expanded="true" />
+            <element signature="e#2740#2741#0" expanded="true" />
+            <element signature="e#2774#2775#0" expanded="true" />
+            <element signature="e#2809#2810#0" expanded="true" />
+            <element signature="e#2857#2858#0" expanded="true" />
+            <element signature="e#2897#2898#0" expanded="true" />
+            <element signature="e#2932#2933#0" expanded="true" />
+            <element signature="e#2968#2969#0" expanded="true" />
+            <element signature="e#3018#3019#0" expanded="true" />
+            <element signature="e#3056#3057#0" expanded="true" />
+            <element signature="e#3094#3095#0" expanded="true" />
+            <element signature="e#3129#3130#0" expanded="true" />
+            <element signature="e#3182#3183#0" expanded="true" />
+            <element signature="e#3218#3219#0" expanded="true" />
+            <element signature="e#3260#3261#0" expanded="true" />
+            <element signature="e#3294#3295#0" expanded="true" />
+            <element signature="e#3342#3343#0" expanded="true" />
+            <element signature="e#3382#3383#0" expanded="true" />
+            <element signature="e#3417#3418#0" expanded="true" />
+            <element signature="e#3453#3454#0" expanded="true" />
+            <element signature="e#3647#3648#0" expanded="true" />
+            <element signature="e#3695#3696#0" expanded="true" />
+            <element signature="e#3735#3736#0" expanded="true" />
+            <element signature="e#3775#3776#0" expanded="true" />
+            <element signature="e#3820#3821#0" expanded="true" />
+            <element signature="e#3856#3857#0" expanded="true" />
+            <element signature="e#3890#3891#0" expanded="true" />
+            <element signature="e#3924#3925#0" expanded="true" />
+            <element signature="e#3974#3975#0" expanded="true" />
+            <element signature="e#4016#4017#0" expanded="true" />
+            <element signature="e#4052#4053#0" expanded="true" />
+            <element signature="e#4089#4090#0" expanded="true" />
+            <element signature="e#4147#4148#0" expanded="true" />
+            <element signature="e#4197#4198#0" expanded="true" />
+            <element signature="e#4237#4238#0" expanded="true" />
+            <element signature="e#4278#4279#0" expanded="true" />
+            <element signature="e#4326#4327#0" expanded="true" />
+            <element signature="e#4366#4367#0" expanded="true" />
+            <element signature="e#4401#4402#0" expanded="true" />
+            <element signature="e#4437#4438#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/repository/FamilyIdSequenceReposiroty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="84" selection-start-line="6" selection-start-column="84" selection-end-line="6" selection-end-column="84" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/controllers/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-start-column="2" selection-end-line="21" selection-end-column="7" />
+        <state relative-caret-position="187">
+          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../satsangserver/pom.xml">
+    <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/pojo/FamilyIDSequence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="65" column="30" selection-start-line="65" selection-start-column="30" selection-end-line="65" selection-end-column="30" />
+        <state relative-caret-position="289">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#434#435#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/controllers/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-705">
+          <caret line="150" column="26" selection-start-line="150" selection-start-column="26" selection-end-line="150" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

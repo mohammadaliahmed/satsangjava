@@ -1,11 +1,14 @@
 package com.appsinventive.satsangserver.pojo;
 
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "Root")
 public class User {
 
+	@Id
+	private int id;
 	private String userName;
 	private String passWord ;
 	private String emailAddress;
