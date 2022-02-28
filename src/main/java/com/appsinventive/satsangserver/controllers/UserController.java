@@ -283,33 +283,33 @@ public class UserController {
 
     @RequestMapping("/getUserData")
     public String getUserData(@RequestBody String primaryUserDetails) {
+        RootMDB rootMDB = null;
+        Gson gson = new Gson();
+        HashMap<String, Object> map = new HashMap<>();
         try {
             JSONObject obj = new JSONObject(primaryUserDetails);
             List<RootMDB> list = userRepository.findAll();
-            RootMDB rootMDB = null;
+
             for (RootMDB user : list) {
                 if (user.getFamilyID().equals(obj.getString("familyId"))) {
                     rootMDB = user;
                 }
             }
             if (rootMDB != null) {
-                Gson gson = new Gson();
-                HashMap<String, Object> map = new HashMap<>();
                 map.put("code", 200);
                 map.put("user", rootMDB);
                 map.put("message", "none");
                 return gson.toJson(map);
             } else {
-                Gson gson = new Gson();
-                HashMap<String, Object> map = new HashMap<>();
                 map.put("code", 404);
                 map.put("message", "Family Id does not exists");
                 return gson.toJson(map);
             }
         } catch (Exception e) {
-
+            map.put("code", 404);
+            map.put("exception", e.getMessage());
         }
-        return "";
+        return gson.toJson(map);
     }
 
     @GetMapping("/getAllRitviks")
