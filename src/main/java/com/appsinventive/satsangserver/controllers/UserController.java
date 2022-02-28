@@ -305,7 +305,7 @@ public class UserController {
             }
         } catch (Exception e) {
             map.put("code", 404);
-            map.put("exception", e.getMessage());
+            map.put("exception", "exception"+e.getMessage());
         }
         return gson.toJson(map);
     }
