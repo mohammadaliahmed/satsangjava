@@ -5,7 +5,9 @@ import com.appsinventive.satsangserver.Utils.MongoConstants;
 import com.appsinventive.satsangserver.Utils.OnlineSAConstants;
 import com.appsinventive.satsangserver.pojo.*;
 import com.appsinventive.satsangserver.repository.FamilyIdSequenceReposiroty;
+import com.appsinventive.satsangserver.repository.RitviksRepository;
 import com.appsinventive.satsangserver.repository.UserRepository;
+import com.google.gson.Gson;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.model.Filters;
 import com.mongodb.client.model.FindOneAndUpdateOptions;
@@ -31,127 +33,133 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
     @Autowired
+    private RitviksRepository ritviksRepository;
+    @Autowired
     private FamilyIdSequenceReposiroty familyIdSequenceReposiroty;
 
     @RequestMapping("/register")
-    public String register(@RequestBody String primaryUserDetails){
+    public String register(@RequestBody String primaryUserDetails) {
 //        getFamilyIDSequenceForSeqName();
 
 //        String familyId=payload.get("familyId");
 
         try {
-            RootMDB root=new RootMDB();
+            RootMDB root = new RootMDB();
             JSONObject obj = new JSONObject(primaryUserDetails);
 //            return obj.getString("firstName").toUpperCase();
 //            root.set_id(getSeqID());
             root.setFirstName(obj.getString("firstName").toUpperCase());
 
-            if(obj.has(("middleName")))
+            if (obj.has(("middleName")))
                 root.setMiddleName(obj.getString("middleName").toUpperCase());
 
-            if(obj.has("lastName"))
+            if (obj.has("lastName"))
                 root.setLastName(obj.getString("lastName").toUpperCase());
 
-            if(obj.has("familyCode"))
+            if (obj.has("familyCode"))
                 root.setIndfamilyCode(obj.getString("familyCode").toUpperCase());
 
-            if(obj.has("emailID"))
+            if (obj.has("emailID"))
                 root.setEmail(obj.getString("emailID").toUpperCase());
 
-            if(obj.has("pwd")){
-                String passwordRequest = obj.getString("pwd");
-                String passwordHash = makePasswordHash(passwordRequest,"123");
-                root.setPassword(passwordHash);
+            if (obj.has("pwd")) {
+//                String passwordRequest = obj.getString("pwd");
+//                String passwordHash = makePasswordHash(passwordRequest, "123");
+//                root.setPassword(passwordHash);
+                root.setPassword(obj.getString("pwd"));
             }
 
-            if(obj.has("phoneNo"))
+            if (obj.has("phoneNo"))
                 root.setPhoneNo(obj.getString(("phoneNo")));
 
-            if(obj.has("rName"))
+            if (obj.has("rName"))
                 root.setrName(obj.getString(("rName")).toUpperCase());
-
 
 
             AddressMDB address = new AddressMDB();
 
-            if(obj.has("add1"))
+            if (obj.has("add1"))
                 address.setAddressLine1(obj.getString("add1").toUpperCase());
 
-            if(obj.has("add2"))
+            if (obj.has("add2"))
                 address.setAddressLine2(obj.getString("add2").toUpperCase());
 
-            if(obj.has("add3"))
+            if (obj.has("add3"))
                 address.setAddressLine3(obj.getString("add3").toUpperCase());
 
-            if(obj.has("city"))
+            if (obj.has("city"))
                 address.setCity(obj.getString("city").toUpperCase());
 
 
-            if(obj.has("country")){
+            if (obj.has("country")) {
 
                 address.setCountry(obj.getString("country").toUpperCase());
             }
 
-            if(obj.has("state")){
+            if (obj.has("state")) {
                 address.setCountry(obj.getString("state").toUpperCase());
 
             }
 
-            if(obj.has("zipCode"))
+            if (obj.has("zipCode"))
                 address.setZipCode(obj.getString("zipCode"));
 
             root.setAddress(address);
 
             root.setFamilyID(getFamilyIDSequenceForSeqName());
-            root.setPersonalId(root.getFamilyID()+"-"+"01");
+            root.setPersonalId(root.getFamilyID() + "-" + "01");
             root.setPprFlag(OnlineSAConstants.YES); // By Default it will be Yes amnd e receipt will be generated.
             root.setUserType(OnlineSAConstants.PORTAL_USER); // by default all users will have portal access only
-            root.setPersonalize(root.getFirstName()+" DADA");   // by default all users will have portal access only
+            root.setPersonalize(root.getFirstName() + " DADA");   // by default all users will have portal access only
             userRepository.save(root);
-            return  ""+root;
+            Gson gson = new Gson();
+            String output = gson.toJson(root);
+            HashMap<String, Object> map = new HashMap<>();
+            map.put("code", 200);
+            map.put("user", root);
+            map.put("message", "none");
+            return gson.toJson(map);
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
         return "";
     }
-    public String getFamilyIDSequenceForSeqName()  {
+
+    public String getFamilyIDSequenceForSeqName() {
         List<FamilyIDSequence> list = familyIdSequenceReposiroty.findAll();
         FamilyIDSequence last = list.get(list.size() - 1);
 
         int addOne = Integer.parseInt(last.getFamilyID().substring(3,
-                last.getFamilyID().length()))+1;
+                last.getFamilyID().length())) + 1;
         String newId = getFamilySeqID(addOne);
-        FamilyIDSequence sequence=new FamilyIDSequence();
+        FamilyIDSequence sequence = new FamilyIDSequence();
         sequence.setFamilyID(newId);
-        sequence.setFirstName(""+newId);
+        sequence.setFirstName("" + newId);
         familyIdSequenceReposiroty.save(sequence);
-        return  newId;
+        return newId;
 
     }
 
 
-
-
-    public String getFamilySeqID(int seqID){
+    public String getFamilySeqID(int seqID) {
 //        BigDecimal seqID=  getFamilyIDSequenceForSeqName(MongoConstants.FAMILY_SEQ);
-        String familyID=null ;
+        String familyID = null;
 //        logger.info("seqID   " + seqID);
-        if (Integer.valueOf(seqID)<=9){
-            familyID = "SA000000"+ seqID;
-        }else if(Integer.valueOf(seqID)<=99){
-            familyID ="SA00000"+ seqID;
-        }else if(Integer.valueOf(seqID)<=999){
-            familyID ="SA0000"+ seqID;
-        }else if(Integer.valueOf(seqID)<=9999){
-            familyID = "SA000"+ seqID;
-        }else if(Integer.valueOf(seqID)<=99999){
-            familyID ="SA00"+ seqID;
-        }else if(Integer.valueOf(seqID)<=999999){
-            familyID ="SA0"+ seqID;
-        }
-        else if(Integer.valueOf(seqID)<=999999){
-            familyID = "SA"+ seqID;
+        if (Integer.valueOf(seqID) <= 9) {
+            familyID = "SA000000" + seqID;
+        } else if (Integer.valueOf(seqID) <= 99) {
+            familyID = "SA00000" + seqID;
+        } else if (Integer.valueOf(seqID) <= 999) {
+            familyID = "SA0000" + seqID;
+        } else if (Integer.valueOf(seqID) <= 9999) {
+            familyID = "SA000" + seqID;
+        } else if (Integer.valueOf(seqID) <= 99999) {
+            familyID = "SA00" + seqID;
+        } else if (Integer.valueOf(seqID) <= 999999) {
+            familyID = "SA0" + seqID;
+        } else if (Integer.valueOf(seqID) <= 999999) {
+            familyID = "SA" + seqID;
         }
         return familyID;
     }
@@ -168,7 +176,7 @@ public class UserController {
 //                .build();
 //
 //        MongoClient mongoClient = new MongoClient(serverList, credentialsList,options);
-        return  null;
+        return null;
 //        return getMongoClient().getDatabase("admin").getCollection(MongoConstants.ROOT_SEQ, RootSequence.class);
     }
 
@@ -224,13 +232,91 @@ public class UserController {
 //        resultObject.setObject1(getRoot);
 //        return resultObject;
 
-//    }
-    @GetMapping("/getUsers")
-    public ResponseEntity<?> getUsers(){
+    //    }
+    @RequestMapping("/loginUser")
+    public String loginUser(@RequestBody String primaryUserDetails) {
 
-        return  ResponseEntity.ok(this.userRepository.findAll());
+        try {
+            JSONObject obj = new JSONObject(primaryUserDetails);
+            List<RootMDB> allUsers = userRepository.findAll();
+            HashMap<String, RootMDB> usersMap = new HashMap<>();
+            for (RootMDB user : allUsers) {
+                usersMap.put(user.getFamilyID(), user);
+            }
+            if (!usersMap.containsKey(obj.getString("familyId"))) {
+                Gson gson = new Gson();
+                HashMap<String, Object> map = new HashMap<>();
+                map.put("code", 404);
+                map.put("message", "Family Id does not exists");
+                return gson.toJson(map);
+            } else {
+                RootMDB user = usersMap.get(obj.getString("familyId"));
+//                if (makePasswordHash(obj.getString("pwd"), "123").equals(user.getPassword())) {
+                if (obj.getString("pwd").equals(user.getPassword())) {
+                    Gson gson = new Gson();
+                    HashMap<String, Object> map = new HashMap<>();
+                    map.put("code", 200);
+                    map.put("user", user);
+                    map.put("message", "none");
+                    return gson.toJson(map);
+                } else {
+                    Gson gson = new Gson();
+                    HashMap<String, Object> map = new HashMap<>();
+                    map.put("code", 404);
+                    map.put("message", "Wrong Password");
+                    return gson.toJson(map);
+                }
+            }
+
+        } catch (JSONException e) {
+
+
+        }
+        return "";
     }
 
+    @GetMapping("/getUsers")
+    public ResponseEntity<?> getUsers() {
+
+        return ResponseEntity.ok(this.userRepository.findAll());
+    }
+
+    @RequestMapping("/getUserData")
+    public String getUserData(@RequestBody String primaryUserDetails) {
+        try {
+            JSONObject obj = new JSONObject(primaryUserDetails);
+            List<RootMDB> list = userRepository.findAll();
+            RootMDB rootMDB = null;
+            for (RootMDB user : list) {
+                if (user.getFamilyID().equals(obj.getString("familyId"))) {
+                    rootMDB = user;
+                }
+            }
+            if (rootMDB != null) {
+                Gson gson = new Gson();
+                HashMap<String, Object> map = new HashMap<>();
+                map.put("code", 200);
+                map.put("user", rootMDB);
+                map.put("message", "none");
+                return gson.toJson(map);
+            } else {
+                Gson gson = new Gson();
+                HashMap<String, Object> map = new HashMap<>();
+                map.put("code", 404);
+                map.put("message", "Family Id does not exists");
+                return gson.toJson(map);
+            }
+        } catch (Exception e) {
+
+        }
+        return "";
+    }
+
+    @GetMapping("/getAllRitviks")
+    public ResponseEntity<?> getAllRitviks() {
+
+        return ResponseEntity.ok(this.ritviksRepository.findAll());
+    }
 
 
 }

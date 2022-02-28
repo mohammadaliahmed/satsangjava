@@ -1,14 +1,15 @@
 package com.appsinventive.satsangserver.pojo;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
 import java.util.List;
 
 
+@Document(collection = "Ritvik")
 public class RitvikMDB {
 
-	private BigDecimal _id;
 	@JsonProperty("IND_FAMILY_CODE")
 	private String indiaFamilyCode;
 
@@ -44,12 +45,7 @@ public class RitvikMDB {
 	public void setRitvikList(List<RitvikMDB> ritvikList) {
 		this.ritvikList = ritvikList;
 	}
-	public BigDecimal get_id() {
-		return _id;
-	}
-	public void set_id(BigDecimal _id) {
-		this._id = _id;
-	}
+
 	public String getIndiaFamilyCode() {
 		return indiaFamilyCode;
 	}
