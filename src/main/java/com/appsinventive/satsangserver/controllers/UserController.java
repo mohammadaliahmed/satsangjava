@@ -299,11 +299,9 @@ public class UserController {
                 map.put("code", 200);
                 map.put("user", rootMDB);
                 map.put("message", "none");
-                return gson.toJson(map);
             } else {
                 map.put("code", 404);
                 map.put("message", "Family Id does not exists");
-                return gson.toJson(map);
             }
         } catch (Exception e) {
             map.put("code", 404);
