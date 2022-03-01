@@ -235,6 +235,8 @@ public class UserController {
     //    }
     @RequestMapping("/loginUser")
     public String loginUser(@RequestBody String primaryUserDetails) {
+        Gson gson = new Gson();
+        HashMap<String, Object> map = new HashMap<>();
 
         try {
             JSONObject obj = new JSONObject(primaryUserDetails);
@@ -244,24 +246,19 @@ public class UserController {
                 usersMap.put(user.getFamilyID(), user);
             }
             if (!usersMap.containsKey(obj.getString("familyId"))) {
-                Gson gson = new Gson();
-                HashMap<String, Object> map = new HashMap<>();
                 map.put("code", 404);
                 map.put("message", "Family Id does not exists");
                 return gson.toJson(map);
             } else {
                 RootMDB user = usersMap.get(obj.getString("familyId"));
+
 //                if (makePasswordHash(obj.getString("pwd"), "123").equals(user.getPassword())) {
                 if (obj.getString("pwd").equals(user.getPassword())) {
-                    Gson gson = new Gson();
-                    HashMap<String, Object> map = new HashMap<>();
                     map.put("code", 200);
                     map.put("user", user);
                     map.put("message", "none");
-                    return gson.toJson(map);
+
                 } else {
-                    Gson gson = new Gson();
-                    HashMap<String, Object> map = new HashMap<>();
                     map.put("code", 404);
                     map.put("message", "Wrong Password");
                     return gson.toJson(map);
@@ -272,7 +269,7 @@ public class UserController {
 
 
         }
-        return "";
+        return gson.toJson(map);
     }
 
     @GetMapping("/getUsers")
@@ -305,7 +302,36 @@ public class UserController {
             }
         } catch (Exception e) {
             map.put("code", 404);
-            map.put("exception", "exception"+e.getMessage());
+            map.put("exception", "exception" + e.getMessage());
+        }
+        return gson.toJson(map);
+    }
+
+    @RequestMapping("/addFamilyMember")
+    public String addFamilyMember(@RequestBody String primaryUserDetails) {
+        RootMDB rootMDB = null;
+        Gson gson = new Gson();
+        HashMap<String, Object> map = new HashMap<>();
+        try {
+            JSONObject obj = new JSONObject(primaryUserDetails);
+            List<RootMDB> list = userRepository.findAll();
+
+            for (RootMDB user : list) {
+                if (user.getFamilyID().equals(obj.getString("familyId"))) {
+                    rootMDB = user;
+                }
+            }
+            if (rootMDB != null) {
+                map.put("code", 200);
+                map.put("user", rootMDB);
+                map.put("message", "none");
+            } else {
+                map.put("code", 404);
+                map.put("message", "Family Id does not exists");
+            }
+        } catch (Exception e) {
+            map.put("code", 404);
+            map.put("exception", "exception" + e.getMessage());
         }
         return gson.toJson(map);
     }
