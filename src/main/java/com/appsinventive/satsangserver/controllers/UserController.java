@@ -1,7 +1,6 @@
 package com.appsinventive.satsangserver.controllers;
 
 
-import com.appsinventive.satsangserver.Utils.MongoConstants;
 import com.appsinventive.satsangserver.Utils.OnlineSAConstants;
 import com.appsinventive.satsangserver.pojo.*;
 import com.appsinventive.satsangserver.repository.FamilyIdSequenceReposiroty;
@@ -9,10 +8,6 @@ import com.appsinventive.satsangserver.repository.RitviksRepository;
 import com.appsinventive.satsangserver.repository.UserRepository;
 import com.google.gson.Gson;
 import com.mongodb.client.MongoCollection;
-import com.mongodb.client.model.Filters;
-import com.mongodb.client.model.FindOneAndUpdateOptions;
-import com.mongodb.client.model.ReturnDocument;
-import com.mongodb.client.model.Updates;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +15,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.UnsupportedEncodingException;
-import java.math.BigDecimal;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.*;
@@ -234,9 +228,11 @@ public class UserController {
 
     //    }
     @RequestMapping("/loginUser")
-    public String loginUser(@RequestBody String primaryUserDetails) {
+    public ResultObject loginUser(@RequestBody String primaryUserDetails) {
         Gson gson = new Gson();
         HashMap<String, Object> map = new HashMap<>();
+        ResultObject resultObject = new ResultObject();
+
 
         try {
             JSONObject obj = new JSONObject(primaryUserDetails);
@@ -248,7 +244,9 @@ public class UserController {
             if (!usersMap.containsKey(obj.getString("familyId"))) {
                 map.put("code", 404);
                 map.put("message", "Family Id does not exists");
-                return gson.toJson(map);
+                resultObject.setSuccess(false);
+                resultObject.setError("Family Id does not exists");
+
             } else {
                 RootMDB user = usersMap.get(obj.getString("familyId"));
 
@@ -257,11 +255,13 @@ public class UserController {
                     map.put("code", 200);
                     map.put("user", user);
                     map.put("message", "none");
+                    resultObject.setObject1(user);
+                    resultObject.setSuccess(true);
+
 
                 } else {
                     map.put("code", 404);
                     map.put("message", "Wrong Password");
-                    return gson.toJson(map);
                 }
             }
 
@@ -269,7 +269,7 @@ public class UserController {
 
 
         }
-        return gson.toJson(map);
+        return resultObject;
     }
 
     @GetMapping("/getUsers")
