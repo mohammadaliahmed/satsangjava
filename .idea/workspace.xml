@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="46e87804-878b-4e93-94fc-8966319f2c79" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../satsangserver/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/controllers/UserController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../satsangserver/out/" />
     <ignored path="$PROJECT_DIR$/../satsangserver/target/" />
@@ -36,8 +35,8 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/controllers/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="266" column="44" lean-forward="true" selection-start-line="266" selection-start-column="44" selection-end-line="266" selection-end-column="44" />
+            <state relative-caret-position="465">
+              <caret line="261" column="24" lean-forward="true" selection-start-line="261" selection-start-column="24" selection-end-line="261" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -325,12 +324,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1645867146547</updated>
-      <workItem from="1645867147891" duration="27394000" />
+      <workItem from="1645867147891" duration="27945000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27394000" />
+    <option name="totallyTimeSpent" value="27945000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -358,7 +357,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32900432" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32900432" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Web" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
@@ -744,8 +743,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../satsangserver/src/main/java/com/appsinventive/satsangserver/controllers/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="266" column="44" lean-forward="true" selection-start-line="266" selection-start-column="44" selection-end-line="266" selection-end-column="44" />
+        <state relative-caret-position="465">
+          <caret line="261" column="24" lean-forward="true" selection-start-line="261" selection-start-column="24" selection-end-line="261" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
